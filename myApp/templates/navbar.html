@@ -1,0 +1,70 @@
+{% load static %}
+    <!-- NAVBAR -->
+
+        <!-- TOPBAR -->
+<div class="navigation-wrapper">
+    <div class="top-bar-wrapper">
+        <div class="container">
+            <ul class="top-bar">
+                <li class="top-bar-item"><span class="icon-user-solid-circle custom-icon"></span> Support</li>
+                <li class="top-bar-item"><img class="custom-icon" alt="PHONE ICON" src="{% static 'assets/contact-us-icon.png' %}"> Contact Us</li>
+                <li class="top-bar-item">206-279-3300</li>
+
+
+                {% if user.is_authenticated %}
+
+                <li class="top-bar-item"><span>{{user.username}}</span></li>
+                <li class="top-bar-item logout-btn"><a href="">Logout<span class="icon-arrow_drop_down"></span></a></li>
+
+                {% else %}
+
+                <li class="top-bar-item login-btn"><span class="icon-user-solid-circle custom-icon"> </span><span>Login <span class="icon-arrow_drop_down"></span></span></li>
+                <li class="top-bar-item register-btn"><span>Register <span class="icon-arrow_drop_down"></span></span></li>
+
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+
+        <!-- END TOPBAR -->
+
+        <!--- NAVBAR BODY --->
+
+    <nav class="nav-bar-wrapper">
+        <div class="container">
+            <span class="icon-bars nav-bar-icon hidden-lg hidden-md"></span>
+            <div class="brand-col">
+                <span class="brand"><a class="nav-home" href="/"><img alt="" src="{% static 'assets/brand.png' %}"></a></span>
+                <span class="brand-description">GEOTECHNICAL SOFTWARE & SOLUTIONS</span>
+            </div>
+
+            <ul class="nav-bar">
+                <li class=""><a class="nav-bar-item" href="{% url 'home' %}" >Home</a></li>
+                <li class=""><a class="nav-bar-item" href="{% url 'software' %}" >Software</a></li>
+                <li class=""><a class="nav-bar-item" href="{% url 'workshop' %}" >Workshop</a></li>
+                <li class=""><a class="nav-bar-item" href="">Downloads</a></li>
+                <li class=""><a class="nav-bar-item"  href="">Services</a></li>
+            </ul>
+            <ul class="nav-top-right">
+                <li class="nav-bar-item-cart"><span class="icon-shopping-cart"></span></li>
+                <li class="nav-bar-item-btn"><button class="buy-now-btn" type="button">Buy Now</button></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+        <!--- END NAVBAR BODY --->
+        <!--- RED TOP BAR --->
+    <div class="red-top-bar">
+        <a style="width: 100%" href="">
+            <marquee class="red-top-bar-body" onmouseover="this.stop();" onmouseleave="this.start();">                
+                     <span class="red-top-bar-text" style="padding-right: 50px">March 20th 2020 - Wish to find more about our programs?</span>
+                     <span class="red-top-bar-text" style="padding-right: 50px">March 20th 2020 - Wish to find more about our programs?</span>
+                     <span class="red-top-bar-text" style="padding-right: 50px">March 20th 2020 - Wish to find more about our programs?</span>                
+            </marquee>
+        </a>
+    </div>
+        <!--- END RED TOP BAR --->
+
+<div class="form-overlay hidden">
+  
+</div>

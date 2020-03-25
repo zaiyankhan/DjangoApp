@@ -1,0 +1,550 @@
+
+{% load static %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+    {% block extrastyles %}{% endblock extrastyles %}
+
+    <title>Deep Excavation</title>
+
+</head>
+
+<body>
+
+
+    {% include 'navbar.html' %}
+    <link rel="stylesheet" href="{% static 'css/v8_styles.css' %}">
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <header>
+            <div class="images">
+                <img src="{% static 'assets/first-level-heading.png' %}" class="header-image first-level-header-image"
+                     alt=""/>
+                <img src="{% static 'assets/top-level-heading.png' %}" class="header-image top-level-header-image"
+                     alt=""/>
+                <img src="{% static 'assets/bottom-level-image.png' %}" class="header-image bottom-level-header-image"
+                     alt=""/>
+            </div>
+
+            <div class="container header-container">
+                <div class="header-body">
+                    <h1>Find your<br>Software Solution </h1>
+                    <p class="header-sub">Helping you solve Deep Excavations, Soil Nailing Walls, Deep Foundations, and
+                        more
+                        with expertly designed software. </p>
+                    <div class="buttons-wrapper">
+                        <button class="header-download-btn hidden-sm hidden-md">Download software</button>
+                        <button class="header-more-btn hidden-sm hidden-md">More info</button>
+                    </div>
+                </div> <!-- COLUMN --->
+                <div class="hexagon">
+                    <img draggable="false" src="{% static 'assets/hexagon.png' %}" alt="">
+                    {#                <img src="{% static 'assets/etherum_icon.png' %}" alt="">#}
+                </div>
+            </div>
+
+            <div class="side-menu-wrapper">
+                <ul class="side-menu">
+                    <li class="side-menu-item"><span class=""></span></li>
+                    <li class="side-menu-item"><span class=""></span></li>
+                    <li class="side-menu-item"><span class=""></span></li>
+                    <li class="side-menu-item"><span class=""></span></li>
+                    <li class="side-menu-item"><span class=""></span></li>
+                    <li class="side-menu-item"><span class=""></span></li>
+                </ul>
+            </div>
+            <div class="header-overlay">
+                <h3>Wish to find more about our programs?</h3>
+                <button class="bold">BOOK A FREE WEB PRESENTATION.</button>
+            </div>
+        </header>
+
+        <section class="what-to-design">
+            <h2>What are you looking forward to design?</h2>
+            <div class="container">
+                
+                    <div class="what-to-design-item">
+                        <p class="software-name">software-name</p>
+                        <button class="software-btn">Review</button>
+                    </div>
+                    <div class="what-to-design-item">
+                        <p class="software-name">software-name</p>
+                        <button class="software-btn">Review</button>
+                    </div>
+                    <div class="what-to-design-item">
+                        <p class="software-name">software-name</p>
+                        <button class="software-btn">Review</button>
+                    </div>
+                    <div class="what-to-design-item">
+                        <p class="software-name">software-name</p>
+                        <button class="software-btn">Review</button>
+                    </div>
+                    <div class="what-to-design-item">
+                        <p class="software-name">software-name</p>
+                        <button class="software-btn">Review</button>
+                    </div>
+                    <div class="what-to-design-item">
+                        <p class="software-name">software-name</p>
+                        <button class="software-btn">Review</button>
+                    </div>
+                    <div class="what-to-design-item">
+                        <p class="software-name">software-name</p>
+                        <button class="software-btn">Review</button>
+                    </div>
+                    <div class="what-to-design-item">
+                        <p class="software-name">software-name</p>
+                        <button class="software-btn">Review</button>
+                    </div>
+                    <div class="what-to-design-item">
+                        <p class="software-name">software-name</p>
+                        <button class="software-btn">Review</button>
+                    </div>
+                    <div class="what-to-design-item">
+                        <p class="software-name">software-name</p>
+                        <button class="software-btn">Review</button>
+                    </div>
+                    <div class="what-to-design-item">
+                        <p class="software-name">software-name</p>
+                        <button class="software-btn">Review</button>
+                    </div>
+                    <div class="what-to-design-item">
+                        <p class="software-name">software-name</p>
+                        <button class="software-btn">Review</button>
+                    </div>
+                    <div class="what-to-design-item">
+                        <p class="software-name">software-name</p>
+                        <button class="software-btn">Review</button>
+                    </div>
+                    <div class="what-to-design-item">
+                        <p class="software-name">software-name</p>
+                        <button class="software-btn">Review</button>
+                    </div>
+                    <div class="what-to-design-item">
+                        <p class="software-name">software-name</p>
+                        <button class="software-btn">Review</button>
+                    </div>
+                
+
+
+            </div>
+        </section>
+
+        <section class="geotechnical-programs">
+            <div class="container">
+                <h2>Our Geotechnical<br>Software Programs</h2>
+                <p>The top selling software program with over 2000 users world wide. It helps you design from the
+                    simplest
+                    to very complex deep excavation systems. An expert by your side!</p>
+
+                <div class="geotechnical-programs-grid">
+                    <div class="geotechnical-programs-grid-item">
+                        <div class="geotechnical-programs-grid-item-body">
+                            <img alt="" src="{% static 'assets/icon_1.png' %}">
+                            <button class="geotechnical-btn">Purchase<span class="grid-btn-overlay"></span></button>
+                        </div>
+                        <h3>Snail Plus - Soil Nailing Software</h3>
+                        <div class="geotechnical-programs-grid-item-description-wrapper">
+                            <p>Snail Plus is soil nailing wall analysis software program. Snail is the only soil nailing
+                                software program that produces all design calculations in a fully printable and
+                                reportable
+                                format.</p>
+                        </div>
+                    </div>
+
+                    <div class="geotechnical-programs-grid-item">
+                        <div class="geotechnical-programs-grid-item-body">
+                            <img alt="" src="{% static 'assets/icon_2.png' %}">
+                            <button class="geotechnical-btn">Purchase<span class="grid-btn-overlay"></span></button>
+                        </div>
+                        <h3>Drilling Machines - For Sale!</h3>
+                        <div class="geotechnical-programs-grid-item-description-wrapper">
+                            <p>A wide range of drilling machines for foundations and other purposes available at
+                                competitive
+                                prices. Our machines have been used worldwide.</p>
+                        </div>
+                    </div>
+
+                    <div class="geotechnical-programs-grid-item">
+                        <div class="geotechnical-programs-grid-item-body">
+                            <img alt="" src="{% static 'assets/icon_1.png' %}">
+                            <button class="geotechnical-btn">Purchase<span class="grid-btn-overlay"></span></button>
+                        </div>
+                        <h3>Full engineering - Services!</h3>
+                        <div class="geotechnical-programs-grid-item-description-wrapper">
+                            <p>Geotechnical and structural design services. Let us solve your geotechnical project
+                                issues,
+                                deliver outstanding solutions, and minimize your risks.</p>
+                        </div>
+                    </div>
+
+                    <div class="geotechnical-programs-grid-item">
+                        <div class="geotechnical-programs-grid-item-body">
+                            <img alt="" src="{% static 'assets/icon_1.png' %}">
+                            <button class="geotechnical-btn">Purchase<span class="grid-btn-overlay"></span></button>
+                        </div>
+                        <h3>Snail Plus - Soil Nailing Software</h3>
+                        <div class="geotechnical-programs-grid-item-description-wrapper">
+                            <p>Snail Plus is soil nailing wall analysis software program. Snail is the only soil nailing
+                                software program that produces all design calculations in a fully printable and
+                                reportable
+                                format.</p>
+                        </div>
+                    </div>
+
+                    <div class="geotechnical-programs-grid-item">
+                        <div class="geotechnical-programs-grid-item-body">
+                            <img alt="" src="{% static 'assets/icon_2.png' %}">
+                            <button class="geotechnical-btn">Purchase<span class="grid-btn-overlay"></span></button>
+                        </div>
+                        <h3>Drilling Machines - For Sale!</h3>
+                        <div class="geotechnical-programs-grid-item-description-wrapper">
+                            <p>A wide range of drilling machines for foundations and other purposes available at
+                                competitive
+                                prices. Our machines have been used worldwide.</p>
+                        </div>
+                    </div>
+
+                    <div class="geotechnical-programs-grid-item">
+                        <div class="geotechnical-programs-grid-item-body">
+                            <img alt="" src="{% static 'assets/icon_1.png' %}">
+                            <button class="geotechnical-btn">Purchase<span class="grid-btn-overlay"></span></button>
+                        </div>
+                        <h3>Full engineering - Services!</h3>
+                        <div class="geotechnical-programs-grid-item-description-wrapper">
+                            <p>Geotechnical and structural design services. Let us solve your geotechnical project
+                                issues,
+                                deliver outstanding solutions, and minimize your risks.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <div class="container">
+                <h1>How it works</h1>
+                <p>All technical support packages include smart contract development and auditing.</p>
+                <div class="videos-slider">
+
+                    <video class="video-slide" controls width="400px" height="200px">
+                        <source src="{{ video.file.url }}" type="video/mp4">
+                        Your browser doesn't support videos.
+                    </video>
+                    
+                    <video class="video-slide" controls width="400px" height="200px">
+                        <source src="{{ video.file.url }}" type="video/mp4">
+                        Your browser doesn't support videos.
+                    </video>
+                    <video class="video-slide" controls width="400px" height="200px">
+                        <source src="{{ video.file.url }}" type="video/mp4">
+                        Your browser doesn't support videos.
+                    </video>
+                    <video class="video-slide" controls width="400px" height="200px">
+                        <source src="{{ video.file.url }}" type="video/mp4">
+                        Your browser doesn't support videos.
+                    </video>
+                    <video class="video-slide" controls width="400px" height="200px">
+                        <source src="{{ video.file.url }}" type="video/mp4">
+                        Your browser doesn't support videos.
+                    </video>
+                    <video class="video-slide" controls width="400px" height="200px">
+                        <source src="{{ video.file.url }}" type="video/mp4">
+                        Your browser doesn't support videos.
+                    </video>
+                </div>
+
+
+                <button class="next-btn"> ></button>
+                <button class="prev-btn"> </button>
+
+
+                <div class="how-it-works-bottom-part">
+                    <h3>Wish to find more about our programs?</h3>
+                    <button>BOOK A FREE WEB PRESENTATION.</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="areas-of-expertise-wrapper">
+            <img alt="simple overlay" src="{% static 'assets/our_areas_of_expertise_background.png' %}" class="areas-of-expertise-overlay">
+            <div class="container">
+                <div class="areas-of-expertise-heading">
+                    <h2>Our areas of expertise</h2>
+                    <p>All technical support packages include smart contract development and auditing.</p>
+                </div>
+
+                <div class="area-of-expertise-body">
+                    <div class="our-company">
+                        <div class="our-company-description">
+                            <p class="leading bold">Our company</p><br>
+                            <p>
+                                Deep Excavation has developed leading software programs or geotechnical engineers
+                                and deep excavation designers. Our devoted team has developed a wide range of geo
+                                technical engineering software programs, which are used by many engineers and cont
+                                ractors in different countries.
+                                <br>
+                                <br>
+                                All our software programs and tools have international recognition and appreciated by
+                                many skilled professionals throughout the world.
+                                <br>
+                                <br>
+
+                                Deep Excavation has developed leading software programs or geotechnical engineers
+                                and deep excavation designers. Our devoted team has developed a wide range of geo
+                                technical engineering software programs, which are used by many engineers and cont
+                                ractors in different countries.
+
+                            </p>
+                        </div>
+                        <div class="our-company-btn-wrapper">
+                            <button class="bold">Read more</button>
+                            <button class="secondary-btn text-black bold"><span></span>How it works</button>
+                        </div>
+                    </div>
+                    <div class="areas-of-expertise-grid">
+
+                        <div class="areas-of-expertise-grid-item">
+                            <img alt="icon" src="{% static 'assets/areas_of_expertise_icon.png' %}">
+                            <div class="">
+                                <p class="leading">Research & Development</p>
+                                <p class="areas-of-expertise-grid-item-text">Deep is the best. Deep is the best.<br>Deep
+                                    is the best. Deep is the best.<br>Deep is the best. Deep is the best.</p>
+                            </div>
+                        </div>
+                        <div class="areas-of-expertise-grid-item">
+                            <img alt="icon" src="{% static 'assets/areas_of_expertise_icon.png' %}">
+                            <div class="areas-of-expertise-grid-item-text">
+                                <p class="leading">Research & Development</p>
+                                <p class="areas-of-expertise-grid-item-text">Deep is the best. Deep is the best.<br>Deep
+                                    is the best. Deep is the best.<br>Deep is the best. Deep is the best.</p>
+
+                            </div>
+                        </div>
+                        <div class="areas-of-expertise-grid-item">
+                            <img alt="icon" src="{% static 'assets/areas_of_expertise_icon.png' %}">
+                            <div class="areas-of-expertise-grid-item-text">
+                                <p class="leading">Research & Development</p>
+                                <p class="areas-of-expertise-grid-item-text">Deep is the best. Deep is the best.<br>Deep
+                                    is the best. Deep is the best.<br>Deep is the best. Deep is the best.</p>
+
+                            </div>
+                        </div>
+                        <div class="areas-of-expertise-grid-item">
+                            <img alt="icon" src="{% static 'assets/areas_of_expertise_icon.png' %}">
+                            <div class="areas-of-expertise-grid-item-text">
+                                <p class="leading">Research & Development</p>
+                                <p class="areas-of-expertise-grid-item-text">Deep is the best. Deep is the best.<br>Deep
+                                    is the best. Deep is the best.<br>Deep is the best. Deep is the best.</p>
+
+                            </div>
+                        </div>
+                        <div class="areas-of-expertise-grid-item">
+                            <img alt="icon" src="{% static 'assets/areas_of_expertise_icon.png' %}">
+                            <div class="areas-of-expertise-grid-item-text">
+                                <p class="leading">Research & Development</p>
+                                <p class="areas-of-expertise-grid-item-text">Deep is the best. Deep is the best.<br>Deep
+                                    is the best. Deep is the best.<br>Deep is the best. Deep is the best.</p>
+
+                            </div>
+                        </div>
+                        <div class="areas-of-expertise-grid-item">
+                            <img alt="icon" src="{% static 'assets/areas_of_expertise_icon.png' %}">
+                            <div class="areas-of-expertise-grid-item-text">
+                                <p class="leading">Research & Development</p>
+                                <p class="areas-of-expertise-grid-item-text">Deep is the best. Deep is the best.<br>Deep
+                                    is the best. Deep is the best.<br>Deep is the best. Deep is the best.</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="designs-wrapper">
+            <img draggable="false" src="{% static 'assets/hyperbola.jpg' %}" alt="">
+
+            <div class="designs-body">
+                <h2>What do you want to design?</h2>
+                <p>Solving Deep Excavation Design</p>
+                <img class="designs-img" src="{% static 'assets/g1.png' %}" alt="">
+
+                <div class="container designs-body-container">
+                    <div class="designs-body-text-wrapper">
+                        <span class="next-btn icon-circle-right"></span>
+                        <span class="prev-btn icon-circle-left"></span>
+                        <div class="text-carousel">
+                            <div class="text-carousel-item">
+                                <p class="leading">DeepFND Deep Foundation, Pile Group, Pile Raft Software</p>
+                                <p>This is the Deep Foundation program that the industry has been missing for years! We are
+                                    now bringing together both structural and geotechnical knowledge in a complete deep
+                                    foundation package.</p>
+                            </div>
+                            <div class="text-carousel-item">
+                                <p class="leading">DeepFND Deep Foundation, Pile Group, Pile Raft Software</p>
+                                <p>This is the Deep Foundation program that the industry has been missing for years! We are
+                                    now bringing together both structural and geotechnical knowledge in a complete deep
+                                    foundation package.</p>
+                            </div>
+                            <div class="text-carousel-item">
+                                <p class="leading">DeepFND Deep Foundation, Pile Group, Pile Raft Software</p>
+                                <p>This is the Deep Foundation program that the industry has been missing for years! We are
+                                    now bringing together both structural and geotechnical knowledge in a complete deep
+                                    foundation package.</p>
+                            </div>
+                            <div class="text-carousel-item">
+                                <p class="leading">DeepFND Deep Foundation, Pile Group, Pile Raft Software</p>
+                                <p>This is the Deep Foundation program that the industry has been missing for years! We are
+                                    now bringing together both structural and geotechnical knowledge in a complete deep
+                                    foundation package.</p>
+                            </div>
+                            <div class="text-carousel-item">
+                                <p class="leading">DeepFND Deep Foundation, Pile Group, Pile Raft Software</p>
+                                <p>This is the Deep Foundation program that the industry has been missing for years! We are
+                                    now bringing together both structural and geotechnical knowledge in a complete deep
+                                    foundation package.</p>
+                            </div>
+                            <div class="text-carousel-item">
+                                <p class="leading">DeepFND Deep Foundation, Pile Group, Pile Raft Software</p>
+                                <p>This is the Deep Foundation program that the industry has been missing for years! We are
+                                    now bringing together both structural and geotechnical knowledge in a complete deep
+                                    foundation package.</p>
+                            </div>
+                            <div class="text-carousel-item">
+                                <p class="leading">DeepFND Deep Foundation, Pile Group, Pile Raft Software</p>
+                                <p>This is the Deep Foundation program that the industry has been missing for years! We are
+                                    now bringing together both structural and geotechnical knowledge in a complete deep
+                                    foundation package.</p>
+                            </div>
+                            <div class="text-carousel-item">
+                                <p class="leading">DeepFND Deep Foundation, Pile Group, Pile Raft Software</p>
+                                <p>This is the Deep Foundation program that the industry has been missing for years! We are
+                                    now bringing together both structural and geotechnical knowledge in a complete deep
+                                    foundation package.</p>
+                            </div>
+                            <div class="text-carousel-item">
+                                <p class="leading">DeepFND Deep Foundation, Pile Group, Pile Raft Software</p>
+                                <p>This is the Deep Foundation program that the industry has been missing for years! We are
+                                    now bringing together both structural and geotechnical knowledge in a complete deep
+                                    foundation package.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="free-webinar">
+            <div class="container">
+
+                <div class="free-webinar-body">
+                    <h2 class="text-black">Sign Up For A <span>Free</span><br><span
+                            class="text-accent">45 Min Webinar</span></h2>
+                    <p class="text-black">Join us for our "free" helical pile design webinar that will cover many design
+                        aspects<br><br> for helical pile foundations. The webinar will cover methods of calculating
+                        geotechnical pile capacity as well as other design aspects. We will also be presenting our
+                        settlement prediction method for helical piles that was presented in the recent DFI helical
+                        piles and tiebacks seminar.</p>
+                    <button>Sign up today</button>
+                </div>
+                <div class="free-webinar-image">
+                    <img alt="" src="{% static 'assets/lappy.png' %}">
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <div class="end-sections">
+
+        {% include 'trusted-by-section.html' %}
+
+        <section class="our-recent-projects-wrapper">
+            <div class="container">
+                <div class="description">
+                    <h2 class="text-black">Our Recent Projects</h2>
+                    <p class="text-black">All technical support packages include smart contract <br>development and
+                        auditing.</p>
+                </div>
+                <div class="recent-projects-slider-wrapper">
+                    <div class="recent-projects-slider">
+
+                        {% if recent_projects %}
+                            {% for project in recent_projects %}
+                                {% if project.image is not None %}
+                                    <a data-fslightbox href="{{ project.image.url }}">
+                                        <img alt="" src="{{ project.image.url }}">
+                                    </a>
+
+                                {% else %}
+                                    <a data-fslightbox href="{% static 'assets/black.png' %}">
+                                        <img alt="" src="{% static 'assets/black.png' %}">
+                                    </a>
+
+                                {% endif %}
+                            {% endfor %}
+                        {% else %}
+                            <a data-fslightbox href="{% static 'assets/black.png' %}">
+                                <img alt="" src="{% static 'assets/black.png' %}">
+                            </a>
+                            <a data-fslightbox href="{% static 'assets/black.png' %}">
+                                <img alt="" src="{% static 'assets/black.png' %}">
+                            </a>
+                            <a data-fslightbox href="{% static 'assets/black.png' %}">
+                                <img alt="" src="{% static 'assets/black.png' %}">
+                            </a>
+                            <a data-fslightbox href="{% static 'assets/black.png' %}">
+                                <img alt="" src="{% static 'assets/black.png' %}">
+                            </a>
+                        {% endif %}
+
+                    </div>
+                    <span class="next-btn icon-circle-right"></span>
+                    <span class="prev-btn icon-circle-left"></span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="subscribe-section">
+            <div class="container">
+                <img src="{% static 'assets/twitter-bird.png' %}" alt="">
+                <h3 class="bold leading">Subscribe for the latest <span
+                        style="font-weight: normal">Deep Excavation</span> updates!</h3>
+                <form>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address.">
+                    <button class="subscribe-btn" type="submit">Get Started</button>
+                </form>
+                <small>Learn more, schedule a demo, or speak with a member of our team.</small>
+            </div>
+        </section>
+
+
+        {% include 'contact-us-section.html' %}
+    </div>
+
+
+{% block extra_scripts %}
+    <script src="{% static 'js/v8.js' %}"></script>
+    <script src="{% static 'js/fslightbox.js' %}"></script>
+{% endblock extra_scripts %}
+
+</body>

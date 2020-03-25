@@ -1,0 +1,219 @@
+{% load static %}
+{#{% load validator %}#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/prices_styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/wish-to-find-more.css' %}">
+
+    {% block extrastyles %}{% endblock extrastyles %}
+
+    <title>Deep Excavation</title>
+
+</head>
+
+<body>
+
+
+    {% include 'navbar.html' %}
+
+
+        <!-- NAVBAR BOTTOM -->
+
+    <div class="bottom-nav-bar-wrapper">
+        <div class="container">
+            <ul class="bottom-nav-bar">
+                    <li class="bottom-nav-item"><div class="full"><span class="page-header-name">Prices page</span></div></li>
+                    <li class="bottom-nav-item">
+                        <button>name goes here</button>
+                        <button>name goes here</button>
+                    </li>
+            </ul>
+        </div>
+    </div>
+
+        <!-- END NAVBAR BOTTOM -->
+
+{% block content %}
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <div class="container body-container">
+
+                <div class="main-content">
+
+                <!-- Articles -->
+
+                    <!-- TOPIC TITLE + DESCRIPTION--->
+                    <div class="page-main-article">
+                        <h2 style="color: black; margin-bottom: 10px;">Article-Title</h2>
+                        <div class="article-description">Article-title Article-title Article-title Article-title Article-title Article-title Article-title Article-title
+                        Article-title Article-title Article-title Article-title Article-title Article-title Article-title Article-titleArticle-title Article-title Article-title Article-title 
+                        Article-title Article-title Article-title Article-title Article-title Article-titleArticle-titleArticle-titleArticle-title Article-title
+                        </div>
+                    </div>
+                    
+
+                    <div class="articles">
+                        
+{#                        <div class="article">#}
+{#                            <div class="article-body">#}
+{##}
+{#                                <img alt="" src="{% static 'assets/pic1.jpg' %}" class="article-title"/>#}
+{##}
+{#                                <span class="article-title">subpage topic title</span>#}
+{##}
+{#                                <div class="learn-more-btn-wrapper">#}
+{#                                    <button>Learn More</button>#}
+{#                                </div>#}
+{##}
+{#                            </div>#}
+{##}
+{#                        </div>#}
+
+                            
+                                    
+                                
+                        {% for prices_page_item in prices_page_items %}
+                            <div class="article">
+                                <div class="article-body">
+
+                                    <img alt="" src="{{ prices_page_item.image.url }}" class="article-title"/>
+
+                                    <span class="article-title">{{ prices_page_item.title}}</span>
+
+                                    <div class="learn-more-btn-wrapper">
+                                        <button><a href="/"> prices_page_item.btn_text </a></button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        {% endfor %}
+
+                        <div class="article">
+                            <div class="article-body">
+
+                                <img alt="" src="{% static 'assets/pic1.jpg' %}" class="article-title"/>
+
+                                <span class="article-title">subpage topic title</span>
+
+                                <div class="learn-more-btn-wrapper">
+                                    <button>Learn More</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="article">
+                            <div class="article-body">
+
+                                <img alt="" src="{% static 'assets/pic1.jpg' %}" class="article-title"/>
+
+                                <span class="article-title">subpage topic title</span>
+
+                                <div class="learn-more-btn-wrapper">
+                                    <button>Learn More</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="article">
+                            <div class="article-body">
+
+                                <img alt="" src="{% static 'assets/pic1.jpg' %}" class="article-title"/>
+
+                                <span class="article-title">subpage topic title</span>
+
+                                <div class="learn-more-btn-wrapper">
+                                    <button>Learn More</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="article">
+                            <div class="article-body">
+
+                                <img alt="" src="{% static 'assets/pic1.jpg' %}" class="article-title"/>
+
+                                <span class="article-title">subpage topic title</span>
+
+                                <div class="learn-more-btn-wrapper">
+                                    <button>Learn More</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="article">
+                            <div class="article-body">
+
+                                <img alt="" src="{% static 'assets/pic1.jpg' %}" class="article-title"/>
+
+                                <span class="article-title">subpage topic title</span>
+
+                                <div class="learn-more-btn-wrapper">
+                                    <button>Learn More</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="article">
+                            <div class="article-body">
+
+                                <img alt="" src="{% static 'assets/pic1.jpg' %}" class="article-title"/>
+
+                                <span class="article-title">subpage topic title</span>
+
+                                <div class="learn-more-btn-wrapper">
+                                    <button>Learn More</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <br>
+                    <br>
+
+
+                    <br>
+                    {% include 'wish-to-find-more.html' %}
+                
+                    <br>
+                </div>
+
+            <!-- SIDE CONTENT -->
+                {% include 'side-content.html' %}
+            <!-- END SIDE CONTENT -->
+
+
+           </div>
+    </main>
+    <br>
+    <br>
+
+    <!-- END MAIN CONTENT -->
+    {% include 'trusted-by-section.html' %}
+    {% include 'contact-us-section.html' %}
+    {% include 'footer.html' %}
+
+    {% endblock content %}
+    {% block extra_scripts %}
+    {% endblock extra_scripts %}
+
+    </body>

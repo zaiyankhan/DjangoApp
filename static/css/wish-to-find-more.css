@@ -1,0 +1,121 @@
+/** find more section **/
+
+.details-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.find-more {
+    max-width: 80%;
+    height: 150px;
+    background-color: var(--mainAccent);
+    border-radius: var(--mainRadius);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+}
+
+@media (max-width: 767px){
+    .find-more{
+        padding: 20px 20px;
+    }
+    .find-more h1{
+        font-size: 16px;
+    }
+
+    .find-more img{
+        display: none;
+    }
+
+    .details-section .container{
+        width: 90%;
+    }
+
+    .signup-form-body input::placeholder{
+        padding: 10px;
+    }
+
+}
+
+
+.find-more .booking {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.find-more .booking button {
+    min-width: 30%;
+    max-width: 40%;
+    color: white;
+    border: none;
+    background-color: var(--mainColor);
+    padding: 10px 30px;
+    border-radius: calc(0.5 * var(--mainRadius));
+}
+
+
+.find-more .booking button:hover {
+    background-color: #252525;
+}
+
+.find-more-image-section img {
+    max-width: 90%;
+    height: auto;
+}
+
+.signup-form {
+    max-width: 80%;
+    height: 100px;
+    background-color: var(--mainAccent);
+    border-radius: var(--mainRadius);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.signup-form label {
+    font-size: 24px;
+}
+
+
+@media (max-width: 767px) {
+    .signup-form label{
+        display: none;
+    }
+
+
+}
+
+.signup-form-body {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.signup-form-body input {
+    width: 65%;
+    padding: 10px;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .signup-form-body input{
+        width: 100%;
+    }
+}
+
+.signup-form-body button {
+    color: white;
+    border: none;
+    background-color: var(--mainColor);
+    padding: 5px 30px;
+    border-radius: calc(0.5 * var(--mainRadius));
+}
+
+.signup-form-body button:hover {
+    background-color: #252525;
+}

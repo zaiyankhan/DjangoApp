@@ -1,0 +1,141 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/gen_styles.css' %}">
+      <link rel="stylesheet" href="{% static 'css/wish-to-find-more.css' %}">
+
+    {% block extrastyles %}{% endblock extrastyles %}
+
+    <title>Deep Excavation</title>
+
+</head>
+
+<body>
+
+
+    {% include 'navbar.html' %}
+
+{% block content %}
+        <!-- NAVBAR BOTTOM -->
+
+        <div class="bottom-nav-bar-wrapper">
+          <div class="container">
+              <ul class="bottom-nav-bar">
+                      <li class="bottom-nav-item"><div class="full"><span class="page-header-name">Gen Page</span></div></li>
+                      <li class="bottom-nav-item">
+                          <button>name goes here</button>
+                          <button>name goes here</button>
+                      </li>
+              </ul>
+          </div>
+      </div>
+  
+          <!-- END NAVBAR BOTTOM -->
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class="container">
+            <h1 class="text-black">How the software works</h1>
+        </div>
+
+        <div class="container body-container">
+
+            <div class="main-content">
+
+            <!-- Articles -->
+
+                <div class="articles">
+
+
+                    <div class="main-article">
+                        <div class="main-article-body">
+                          <img src="{% static 'assets/pic12.jpg' %}" alt="IMAGE PLACEHOLDER">
+                        </div>
+                    </div>
+
+                    <div class="article">
+                      <div class="article-body">
+                          <h2 class="article-title">Article-Title</h2>
+                          <div class="article-description">Article-title Article-title Article-title Article-title Article-title Article-title Article-title Article-title
+                            Article-title Article-title Article-title Article-title Article-title Article-title Article-title Article-titleArticle-title Article-title Article-title Article-title 
+                            Article-title Article-title Article-title Article-title Article-title Article-titleArticle-titleArticle-titleArticle-title Article-title
+                          </div>
+                      </div>
+                      <img src="{% static 'assets/pic1.jpg' %}" alt="IMAGE PLACEHOLDER">
+                    </div>
+                    <div class="article">
+                      <div class="article-body">
+                          <h2 class="article-title">Article-Title</h2>
+                          <div class="article-description">Article-title Article-title Article-title Article-title Article-title Article-title Article-title Article-title
+                            Article-title Article-title Article-title Article-title Article-title Article-title Article-title Article-titleArticle-title Article-title Article-title Article-title 
+                            Article-title Article-title Article-title Article-title Article-title Article-titleArticle-titleArticle-titleArticle-title Article-title
+                          </div>
+                      </div>
+                      <img src="{% static 'assets/pic1.jpg' %}" alt="IMAGE PLACEHOLDER">
+                    </div>
+                    <div class="article">
+                      <div class="article-body">
+                          <h2 class="article-title">Article-Title</h2>
+                          <div class="article-description">Article-title Article-title Article-title Article-title Article-title Article-title Article-title Article-title
+                            Article-title Article-title Article-title Article-title Article-title Article-title Article-title Article-titleArticle-title Article-title Article-title Article-title 
+                            Article-title Article-title Article-title Article-title Article-title Article-titleArticle-titleArticle-titleArticle-title Article-title
+                          </div>
+                      </div>
+                      <img src="{% static 'assets/pic1.jpg' %}" alt="IMAGE PLACEHOLDER">
+                    </div>
+
+                </div>
+
+                {% if is_paginated %}
+                  <ul class="pagination">
+                    {% if page_obj.has_previous %}
+                      <li><a href="?page={{ page_obj.previous_page_number }}">&laquo;</a></li>
+                    {% else %}
+                      <li class="disabled"><span>&laquo;</span></li>
+                    {% endif %}
+                    {% for i in paginator.page_range %}
+                      {% if page_obj.number == i %}
+                        <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+                      {% else %}
+                        <li><a href="?page={{ i }}">{{ i }}</a></li>
+                      {% endif %}
+                    {% endfor %}
+                    {% if page_obj.has_next %}
+                      <li><a href="?page={{ page_obj.next_page_number }}">&raquo;</a></li>
+                    {% else %}
+                      <li class="disabled"><span>&raquo;</span></li>
+                    {% endif %}
+                  </ul>
+                {% endif %}
+
+                {% include 'wish-to-find-more.html' %}
+              </div>
+
+
+            <!-- SIDE CONTENT -->
+                {% include 'side-content.html' %}
+            <!-- END SIDE CONTENT -->
+
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- END MAIN CONTENT -->
+    {% include 'trusted-by-section.html' %}
+    {% include 'contact-us-section.html' %}
+
+
+{% endblock content %}
+
+    {% block extra_scripts %}
+    {% endblock extra_scripts %}
+    </body>

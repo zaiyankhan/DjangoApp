@@ -1,0 +1,969 @@
+
+button:not(.geotechnical-btn):active{
+    transition: 0.2s;
+    transform: scale(1.1) rotate(-2deg);
+}
+
+
+header{
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    header {
+        height: 300px;
+    }
+}
+
+@media (max-width: 676px){
+    .header{
+        text-align: center;
+    }
+}
+
+
+header > .container{
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header > .container h1 {
+    font-size: 60px;
+}
+
+@media (max-width: 676px) {
+    header > .container h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 500px){
+    header > .container h1{
+        font-size: 1em;
+    }
+}
+
+.header-body .header-sub{
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+@media (max-width: 500px) {
+    .header-body .header-sub{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 677px) and (max-width: 991px) {
+    header > .container h1 {
+        font-size: 2.5em;
+    }
+}
+
+
+header .header-body{
+    max-width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media (max-width: 400px){
+    header .header-body{
+        max-width: 90%;
+    }
+}
+
+.images{
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+    height: 100%;
+
+}
+
+.header-image{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+
+}
+
+.header-download-btn{
+    text-transform: uppercase;
+}
+
+.header-more-btn{
+    text-transform: uppercase;
+    background-color: white;
+    color: #6b87a4;
+}
+
+.header-overlay{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.2);
+}
+
+@media (max-width:500px ){
+    .header-overlay{
+        height: auto;
+    }
+}
+
+@media (max-width: 360px){
+    .header-overlay{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.header-overlay h3{
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 360px){
+    .header-overlay h3{
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width:500px ){
+    .header-overlay h3{
+        font-size: 12px;
+    }
+}
+
+.header-overlay button{
+    position: relative;
+    z-index: 1;
+}
+
+
+.header-overlay h3{
+    margin-right: 10px;
+}
+
+header .buttons-wrapper{
+    display: flex;
+    justify-content: flex-start;
+}
+
+header .buttons-wrapper button{
+    margin: 5px;
+}
+
+.side-menu-wrapper{
+    position: absolute;
+    right: 0;
+}
+
+.hexagon{
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.hexagon img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media (max-width: 400px){
+    .hexagon{
+        display: none;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .hexagon{
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 767px) {
+    .hexagon {
+        display: none;
+    }
+}
+
+/*** WHAT TO DESIGN ***/
+
+.what-to-design{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 0 0 ;
+    background-color: var(--mainColor);
+}
+
+.what-to-design h2{
+    font-size: 3em;
+    padding: 0 0 50px 0;
+
+}
+
+
+.what-to-design .container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 10px;
+    justify-items: center;
+}
+
+.what-to-design-item{
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.software-name{
+    font-size: 16px;
+    font-weight: bold;
+}
+.what-to-design button{
+    margin-top: 5px;
+}
+
+@media (max-width: 991px){
+    .what-to-design .container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px){
+    .what-to-design .container{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 50px;
+    }
+}
+
+@media (max-width: 430px){
+    .what-to-design .container{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/*** END WHAT TO DESIGN ***/
+
+/** Geo technical ...... ***/
+
+.geotechnical-programs{
+    background-color: var(--mainColor);
+    padding: 50px;
+    text-align: center;
+}
+
+.geotechnical-programs .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.geotechnical-programs h2{
+    font-size: 3em;
+    line-height: 1.2;
+    margin-bottom: 10px;
+
+}
+
+.geotechnical-programs p{
+    max-width: 400px;
+}
+
+.geotechnical-programs-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(350px, 400px));
+    grid-template-rows: repeat(2, minmax(250px, 1fr));
+    padding-top: 100px;
+    row-gap: 100px;
+    column-gap: 20px;
+}
+
+@media (max-width: 1240px){
+    .geotechnical-programs-grid{
+        grid-template-columns: repeat(2, minmax(350px, 400px));
+    }
+}
+
+@media (max-width: 840px){
+    .geotechnical-programs-grid{
+        grid-template-columns: minmax(350px, 400px);
+    }
+
+    .geotechnical-programs-grid-item h3{
+        font-size: 13em;
+        line-height: 1.2;
+        margin-bottom: 10px;
+
+    }
+}
+
+@media (max-width: 430px){
+    .geotechnical-programs-grid{
+        grid-template-columns: minmax(250px, 350px);
+
+    }
+}
+
+.geotechnical-programs-grid-item{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.grid-btn-overlay{
+    display: inline-block;
+    top: -50px;
+    right: 0    ;
+    opacity: 30%;
+    background-color: var(--boxShadowColor);
+    width: 130px;
+    height: 10px;
+    border-radius: calc(var(--mainRadius)/4);
+    position: absolute;
+}
+
+@media (max-width: 500px) {
+    .grid-btn-overlay{
+        display: none;
+    }
+}
+
+
+.geotechnical-programs-grid-item-body{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.geotechnical-programs-grid-item-body img{
+    max-height: 48px;
+    max-width: 48px;
+}
+
+.geotechnical-programs-grid-item button{
+    position: relative;
+    margin-right: 30px;
+    padding: calc(var(--defaultButtonVerticalPadding)*1.5) calc(var(--defaultButtonHorizontalPadding)*4);
+}
+
+.geotechnical-programs-grid-item h3{
+    /*text-align: left;*/
+    font-size: 28px;
+    height: 60px;
+}
+
+
+@media (max-width: 840px){
+    .geotechnical-programs-grid-item h3{
+        font-size: 1.5em;
+        margin: 5px 0;
+        line-height: 1.2;
+
+    }
+}
+
+.geotechnical-programs-grid-item span{
+    font-size: 30px;
+}
+
+.geotechnical-programs-grid-item-description-wrapper{
+    max-width: calc(90%);
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+
+}
+
+.geotechnical-programs-grid-item-description-wrapper p{
+    white-space: normal;
+      overflow: hidden;
+      text-overflow: ellipsis;
+}
+
+/** end GEO technical ...... ***/
+
+
+/** how it works section **/
+
+.how-it-works{
+    padding-top: 50px;
+    color: black;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.how-it-works .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 1600px) {
+    .how-it-works .container{
+        width: 1600px;
+    }
+}
+
+
+.how-it-works h1{
+    font-size: 50px;
+}
+
+.how-it-works h3{
+    font-size: 18px;
+}
+
+.videos-slider{
+    display: flex;
+    max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.how-it-works .next-btn{
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.how-it-works .prev-btn{
+    position: absolute;
+    left: 5px;
+    top: 50%;
+}
+
+
+.video-slide{
+    margin: 20px;
+    border: 1px solid black;
+}
+
+@media (min-width: 600px){
+    .video-slide{
+        min-width: 500px;
+        height: auto;
+    }
+}
+
+.how-it-works-bottom-part{
+    display: flex;
+    align-items: center;
+}
+
+.how-it-works-bottom-part button{
+    margin-left: 10px;
+}
+
+/** end how it works section **/
+
+
+/** areas of expertise */
+.areas-of-expertise-wrapper{
+    color: black;
+    padding: 100px;
+    position: relative;
+    right: 0;
+}
+
+.areas-of-expertise-wrapper .areas-of-expertise-overlay{
+    position: absolute;
+    top: -100%;
+    opacity: 30%;
+    right: 0;
+    z-index: 0;
+}
+
+@media (max-width: 1100px) {
+    .areas-of-expertise-wrapper{
+        padding: 50px;
+    }
+
+}
+
+.areas-of-expertise-wrapper .container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.areas-of-expertise-wrapper .areas-of-expertise-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.areas-of-expertise-wrapper .areas-of-expertise-heading h2{
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+
+
+.area-of-expertise-body {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px   ;
+}
+
+@media (max-width: 991px) {
+    .area-of-expertise-body{
+        flex-direction: column;
+        align-items: center;
+    }
+    .our-company{
+        order: 2;
+        margin-top: 20px;
+    }
+}
+
+.our-company{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.our-company-description p{
+    line-height: 1.3;
+}
+
+
+@media (max-width: 1100px) {
+    .our-company{
+        justify-content: flex-start;
+    }
+
+}
+
+.areas-of-expertise-grid{
+    background-color: var(--mainColor);
+    border-radius: var(--mainRadius);
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    z-index: 1;
+}
+
+@media (max-width: 1100px) {
+    .areas-of-expertise-grid{
+        grid-template-columns: 1fr;
+        padding: 20px 50px;
+    }
+}
+
+.areas-of-expertise-grid-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+
+@media (max-width: 1100px) {
+    .areas-of-expertise-grid-item .leading{
+        margin-bottom: 2px;
+    }
+}
+
+.areas-of-expertise-grid-item img{
+    margin: 10px 2px 10px 10px;
+    max-width: 64px;
+    max-height: 64px;
+}
+
+.areas-of-expertise-grid-item .leading{
+    color: #eebc31;
+    font-size: 22px;
+    margin-bottom: 2px;
+
+}
+.areas-of-expertise-grid-item-text{
+    color: #bbbbbb;
+    font-size: 12px;
+    margin-left: 5px;
+
+}
+
+.our-company-btn-wrapper button{
+    text-transform: uppercase;
+    padding: 10px calc(var(--defaultButtonHorizontalPadding)*2);
+    box-shadow: 5px 10px 15px #bbbbbb;
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+@media (max-width: 500px){
+    .our-company-btn-wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+/** end areas of expertise */
+
+/* what do you want to design section */
+
+
+.designs-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    overflow-x: hidden;
+    background-color: var(--mainAccent);
+
+}
+
+.designs-wrapper img {
+    overflow-x: hidden;
+}
+
+@media (max-width: 991px) {
+    .designs-img{
+        display: none;
+    }
+
+}
+
+.designs-wrapper .designs-body{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 991px) {
+    .designs-body{
+    }
+    .designs-body-container{
+    }
+}
+
+.designs-body h2{
+    font-size: 3em;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 991px) {
+    .designs-body h2{
+        font-size: 2em;
+    }
+}
+.designs-body p{
+    margin-bottom: 10px;
+}
+
+.designs-body-container{
+    padding-top: 20px;
+}
+
+.designs-body-text-wrapper{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    position: relative;
+}
+
+.designs-body-text-wrapper > div {
+    text-align: start;
+}
+
+.designs-body-text-wrapper p{
+    padding: 0 10px;
+}
+
+@media (max-width: 991px) {
+    .designs-body-text-wrapper{
+        grid-template-columns: auto;
+    }
+}
+/**text carousel */
+
+.text-carousel{
+    display: flex;
+    width: 100%;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+    overflow: hidden;
+}
+
+.text-carousel-item {
+    padding: 0 40px;
+}
+
+.designs-body-text-wrapper .next-btn{
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.designs-body-text-wrapper .prev-btn{
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.designs-body-text-wrapper .prev-btn, .designs-body-text-wrapper .next-btn{
+    font-size: 30px;
+    color: black;
+}
+.designs-body-text-wrapper .prev-btn:active, .designs-body-text-wrapper .next-btn:active{
+    transform: scale(1.1);
+}
+
+/**end text carousel */
+
+/**end what do you want to design section*/
+
+/* webinrar */
+
+.free-webinar{
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 400px){
+    .free-webinar{
+        padding: 50px;
+    }
+}
+
+.free-webinar .container{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(200px ,350px));
+    justify-items: center;
+}
+
+
+@media (max-width: 1200px) {
+    .free-webinar .container{
+        grid-template-columns: 100%;
+        grid-template-rows: 33.3% 33.3% 33.3%;
+    }
+}
+
+@media (max-width: 400px){
+    .free-webinar .container{
+        grid-template-rows: auto;
+    }
+    .free-webinar-body{
+        margin-top: 10px;
+    }
+}
+
+
+.free-webinar-body{
+    height: 90%;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+
+}
+
+@media (max-width: 1200px) {
+    .free-webinar-body{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+}
+
+.free-webinar-body h2{
+    align-self: flex-start;
+    font-size: 32px;
+}
+
+.free-webinar-body p{
+    font-size: 16px;
+}
+
+.free-webinar-body button{
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+.free-webinar-image{
+    grid-column: 3/6;
+    object-fit: cover;
+}
+
+.free-webinar-image img{
+    max-width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+
+@media (max-width: 1200px) {
+    .free-webinar-image{
+        grid-column: 1/2;
+    }
+}
+
+
+/* end webinrar */
+
+
+/** recent projects ***/
+
+.recent-projects-wrapper {
+    color: var(--mainColor);
+
+}
+
+.our-recent-projects img{
+    max-width: 450px;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+
+/** end recent projects ***/
+
+.our-recent-projects-wrapper{
+    text-align: center;
+    padding: 50px 0;
+}
+
+.our-recent-projects-wrapper .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.our-recent-projects-wrapper .description{
+    margin-bottom: 15px;
+}
+
+.our-recent-projects-wrapper .description p{
+    margin-top: 5px;
+}
+
+.our-recent-projects-wrapper .container h2{
+    font-size: 40px;
+}
+
+.our-recent-projects-wrapper .recent-projects-slider-wrapper{
+    position: relative;
+    width: 100%;
+}
+
+.our-recent-projects-wrapper .recent-projects-slider {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}
+
+.our-recent-projects-wrapper .recent-projects-slider span:active{
+    transform: scale(0.9);
+}
+
+@media (min-width: 1600px) {
+    .our-recent-projects-wrapper .container{
+        width: 1600px;
+    }
+}
+
+.our-recent-projects-wrapper span.next-btn,.our-recent-projects-wrapper span.prev-btn{
+    font-size: 60px;
+    cursor: var(--defaultCursor);
+    transition: 0.1s;
+}
+
+.our-recent-projects-wrapper span.next-btn{
+    transform: translateX(-20%) translateY(-50%);
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.our-recent-projects-wrapper span.prev-btn {
+    transform: translateX(20%) translateY(-50%);
+    position: absolute;
+    left: 5px;
+    top: 50%;
+}
+
+.our-recent-projects-wrapper span:active{
+    padding: 2px;
+}
+
+.subscribe-section{
+    background-color: var(--mainColor);
+    padding: 50px 0;
+    z-index: 1;
+}
+
+.subscribe-section .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subscribe-section .container h3{
+    font-size: 40px;
+}
+
+.subscribe-section .container form{
+    display: flex;
+    margin-top: 20px;
+}
+
+.subscribe-section .container img{
+    max-width: 100%;
+    height: auto;
+}
+
+.subscribe-section .container button{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0 25px;
+}
+
+.subscribe-section .container input{
+    border-top-left-radius: var(--mainRadius);
+    border-bottom-left-radius: var(--mainRadius);
+    border: none;
+    padding: 15px 30px;
+}
+
+.subscribe-section .container small{
+    margin-top: 20px;
+    color: #6b87a4;
+}
